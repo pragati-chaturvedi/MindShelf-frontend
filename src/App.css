@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EAE7DC;
+    font-family: 'Inter', sans-serif;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.mainTitle {
+    font-size: 2.8rem;
+    color: #2c2c2c;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}

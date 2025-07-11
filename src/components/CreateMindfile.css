@@ -1,0 +1,86 @@
+.create-mindfile-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(34, 32, 32, 0.668);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1000;
+    padding: 0;
+}
+
+.create-mindfile-dialog {
+    margin: 0 36px 100px 0;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #D8C3A5;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputGroup input:focus {
+    outline: none;
+    border-color: #E98074;
+    box-shadow: 0 0 0 2px rgba(233, 128, 116, 0.15);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancelButton,
+.addButton {
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background-color: #eaeaea;
+    color: #444;
+}
+
+.addButton {
+    background-color: #E85A4F;
+    color: white;
+}
+
+.addButton:hover {
+    background-color: #D24C42;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

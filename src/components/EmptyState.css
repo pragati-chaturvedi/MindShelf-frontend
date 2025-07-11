@@ -1,0 +1,25 @@
+.emptyStateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    color: #777;
+}
+
+.icon {
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

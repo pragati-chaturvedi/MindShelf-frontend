@@ -1,0 +1,66 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.backToLandingButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e85a4f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    /* z-index: 10; */
+    /* Ensure it's above other elements */
+}
+
+.backToLandingButton:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.logoutButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e85a4f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logoutButton:hover {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.mindfileGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
