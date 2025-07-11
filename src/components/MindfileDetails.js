@@ -1,4 +1,3 @@
-import React from 'react';
 import './MindfileDetails.css'
 
 function MindfileDetails({ mindfile, onClose }) {
@@ -22,7 +21,7 @@ function MindfileDetails({ mindfile, onClose }) {
                     <button
                         onClick={onClose}
                     >
-                        Close
+                        X
                     </button>
                 </div>
                 <p

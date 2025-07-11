@@ -1,5 +1,4 @@
-// const API_BASE_URL=import.meta.env.BACKEND_URL
-const API_BASE_URL = "http://localhost:3000/api"
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
 console.log(API_BASE_URL)
 
 const getAuthHeader = () => {

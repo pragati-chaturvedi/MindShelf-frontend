@@ -28,9 +28,10 @@ function DashboardPage() {
         setError(null);
         try {
             const data = await api.fetchLatestMindfiles();
-            setMindfiles(data);
+            setMindfiles(data || []);
         } catch (err) {
             setError(err.message || "Failed to fetch lastest minfiles.");
+            setMindfiles([]);
         } finally {
             setLoading(false);
         }
@@ -78,6 +79,7 @@ function DashboardPage() {
             const response = await api.summarizeAndStoreLink(link);
             if (response && response.title) {
                 setSuccessMessage(`"${response.title}" mindfile has been added.`);
+                fetchLatest();
                 setTimeout(() => {
                     setSuccessMessage('');
                 }, 3000);
@@ -92,7 +94,9 @@ function DashboardPage() {
     };
 
     console.log(typeof mindfiles)
-    const selectedMindfile = mindfiles.find(mf => mf._id === selectedMindfileId);
+    const selectedMindfile = Array.isArray(mindfiles)
+        ? mindfiles.find(mf => mf._id === selectedMindfileId)
+        : null;
 
     return (
         <div className='dashboardContainer'>

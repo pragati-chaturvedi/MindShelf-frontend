@@ -25,7 +25,7 @@ function SearchBar({ onSearch }) {
                 className='searchBar_input'
             />
             <button onClick={handleSearchClick} className="searchButton">
-                🔍
+                Search
             </button>
         </div>
     );
